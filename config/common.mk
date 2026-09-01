@@ -82,6 +82,11 @@ endif
 PRODUCT_PACKAGES += \
     TouchGestures
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Updater
 include vendor/custom/config/ota.mk
 
