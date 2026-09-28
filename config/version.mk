@@ -5,11 +5,14 @@ CUSTOM_PLATFORM_VERSION := 17.0
 CUSTOM_VERSION := $(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)
 CUSTOM_VERSION_PROP := seventeen
 
+CUSTOM_DISPLAY_VERSION := $(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_VERSION_PROP)
+
 # PixelOS Platform Version
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.custom.build.date=$(CUSTOM_BUILD_DATE) \
     ro.custom.device=$(CUSTOM_BUILD) \
     ro.custom.version=PixelOS_$(CUSTOM_VERSION) \
+    ro.custom.display.version=$(CUSTOM_DISPLAY_VERSION) \
     net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
 # Updater
