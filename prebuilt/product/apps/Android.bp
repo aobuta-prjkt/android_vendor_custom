@@ -1,0 +1,11 @@
+android_app_import {
+    name: "Gramophone",
+    apk: "Gramophone.apk",
+    presigned: true,
+    preprocessed: true,
+    product_specific: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+}

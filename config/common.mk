@@ -87,6 +87,13 @@ PRODUCT_PACKAGES += \
     LMOFreeform \
     LMOFreeformSidebar
 
+# Gramophone
+TARGET_INCLUDE_GRAMOPHONE ?= false
+ifeq ($(TARGET_INCLUDE_GRAMOPHONE),true)
+PRODUCT_PACKAGES += \
+    Gramophone
+endif
+
 # Updater
 include vendor/custom/config/ota.mk
 
